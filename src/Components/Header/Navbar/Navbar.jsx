@@ -1,3 +1,4 @@
+import { IoMdContact } from "react-icons/io";
 const Navbar = () => {
     return (
         <div className="container mx-auto">
@@ -7,22 +8,12 @@ const Navbar = () => {
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
       </div>
-      <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-        <li><a>Item 1</a></li>
-        <li>
-          <a>Parent</a>
-          <ul className="p-2">
-            <li><a>Submenu 1</a></li>
-            <li><a>Submenu 2</a></li>
-          </ul>
-        </li>
-        <li><a>Item 3</a></li>
-      </ul>
+
     </div>
-    <a className="btn btn-ghost text-xl">daisyUI</a>
+    <a className="btn btn-ghost text-4xl font-bold">Healthy <span className="text-green-500">Recipe</span> </a>
   </div>
   <div className="navbar-center hidden lg:flex">
-    <ul className="menu menu-horizontal px-1">
+    <ul className="menu menu-horizontal px-1 text-lg font-normal text-[#585167]">
       <li><a>Home</a></li>
       <li><a>Recipies</a></li>
       <li><a>About</a></li>
@@ -31,14 +22,17 @@ const Navbar = () => {
     </ul>
   </div>
   <div className="navbar-end flex ">
-  <label className="input input-bordered flex items-center gap-2">
+  <label className="input input-bordered md:flex items-center gap-2 rounded-3xl hidden">
   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
 <path d="M21 20.9998L15.803 15.8028M15.803 15.8028C17.2096 14.3962 17.9998 12.4885 17.9998 10.4993C17.9998 8.51011 17.2096 6.60238 15.803 5.19581C14.3964 3.78923 12.4887 2.99902 10.4995 2.99902C8.51029 2.99902 6.60256 3.78923 5.19599 5.19581C3.78941 6.60238 2.99921 8.51011 2.99921 10.4993C2.99921 12.4885 3.78941 14.3962 5.19599 15.8028C6.60256 17.2094 8.51029 17.9996 10.4995 17.9996C12.4887 17.9996 14.3964 17.2094 15.803 15.8028Z" stroke="#150B2B" stroke-opacity="0.7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
   <input type="text" className="grow" placeholder="Search" />
 </label>
+<div className="bg-green-500 p-3 rounded-full text-3xl ml-6">
+<IoMdContact />
+</div>
 
-  <div className="avatar rounded-full bg-green-500 ">
+  {/* <div className="avatar rounded-full bg-green-500 ml-10 ">
        <div className="w-12 rounded-full flex justify-center items-center ">
        <div className="">
        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
@@ -46,7 +40,7 @@ const Navbar = () => {
         </svg>
        </div>
   </div>
-</div>
+</div> */}
 
   </div>
 </div>
