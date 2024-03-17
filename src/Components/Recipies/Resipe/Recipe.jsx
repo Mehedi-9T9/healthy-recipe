@@ -1,12 +1,9 @@
-import { useState } from "react";
 import { IoMdTime} from "react-icons/io";
 import { FaFire } from "react-icons/fa";
+import PropTypes from 'prop-types';
 
 const Recipe = ({recipe,wantToCookHandler}) => {
-  const {resipe_img,resipe_name,short_description, ingredients,preparing_time,calories,resipe_id}=recipe
-  // const [value,setValue] =useState([])
-  // setValue(ingredients)
-  // console.log(value);
+const {resipe_img,resipe_name,short_description, ingredients,preparing_time,calories,resipe_id}=recipe
 
 return (
 <div className="">
@@ -25,9 +22,9 @@ return (
                     </div>
                     <div className="flex gap-x-5 items-center">
                     <IoMdTime />
-                    <p>{preparing_time}</p>
+                    <p>{preparing_time} Minute</p>
                     <FaFire />
-                    <p>{calories}</p>
+                    <p>{calories} Calories</p>
 
                     </div>
 
@@ -42,3 +39,7 @@ return (
 }
 
 export default Recipe;
+Recipe.propTypes={
+  recipe:PropTypes.object,
+  wantToCookHandler:PropTypes.func
+}

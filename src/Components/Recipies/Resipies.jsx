@@ -2,10 +2,8 @@ import { useEffect } from "react";
 import { useState } from "react";
 import Recipe from "./Resipe/Recipe";
 import Cart from "./Cart/Cart";
-
 import { ToastContainer, toast } from 'react-toastify';
-
-  import 'react-toastify/dist/ReactToastify.css';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Recipies = () => {
     const [recipes,setRecipes]=useState([]);
@@ -35,22 +33,13 @@ const [selects,setSelects]=useState([])
             }
         }
 
-
         }
         else{
             const newSelecte = [...selects,recipe]
-            // console.log('same to ');
             setSelects(newSelecte)
         }
 
-
-
-
-
-
-
   }
-//   console.log(selects);
 const [current,setCurrent]=useState([])
 
 const preparingBtnHandler =(id)=>{
@@ -67,7 +56,7 @@ const preparingBtnHandler =(id)=>{
                 <h2 className="text-[#150B2B] text-4xl font-bold mb-6">Our Recipes</h2>
                 <p className="text-[#6F697C] text-base font-normal">Lorem ipsum dolor sit amet consectetur. Proin et feugiat senectus vulputate netus pharetra rhoncus. Eget <br /> urna volutpat curabitur elementum mauris aenean neque. </p>
             </div>
-            <div className="flex md:mt-12 flex-col-reverse md:flex-row gap-5">
+            <div className="flex mt-8 md:mt-12 flex-col-reverse md:flex-row gap-5">
                 <div className="md:w-[60%] md:grid grid-cols-2 gap-6">
                      {
                          recipes.map((recipe,idx) =><Recipe key={idx} recipe={recipe} wantToCookHandler={wantToCookHandler}></Recipe>)

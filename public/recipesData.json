@@ -5,14 +5,14 @@
         "resipe_id": "1",
         "resipe_name": "Classic Spaghetti Bolognese",
         "short_description": "Traditional Italian pasta dish with rich tomato sauce and ground beef.",
-        "preparing_time": "45 minutes",
+        "preparing_time": 45,
         "ingredients": [
             "550 g chicken",
             "120 ml soy sauce",
             "200 g basil leaf",
             "400 g mushroom"
           ],
-        "calories": "450 calories"
+        "calories": 450
 
     },
     {
@@ -21,14 +21,14 @@
         "resipe_id": "2",
         "resipe_name": "Grilled Lemon Herb Chicken",
         "short_description": "Juicy grilled chicken marinated in a zesty blend of lemon and herbs.",
-        "preparing_time": "35 minutes",
+        "preparing_time": 35,
         "ingredients": [
             "550 g chicken",
             "120 ml soy sauce",
             "200 g basil leaf",
             "400 g mushroom"
           ],
-        "calories": "300 calories"
+        "calories": 300
 
     },
     {
@@ -37,14 +37,14 @@
         "resipe_id": "3",
         "resipe_name": "Vegetable Stir-Fry",
         "short_description": "A colorful medley of fresh vegetables stir-fried to perfection.",
-        "preparing_time": "25 minutes",
+        "preparing_time": 25,
         "ingredients": [
             "550 g chicken",
             "120 ml soy sauce",
             "200 g basil leaf",
             "400 g mushroom"
           ],
-        "calories": "200 calories"
+        "calories": 200
 
     },
     {
@@ -53,14 +53,14 @@
         "resipe_id": "4",
         "resipe_name": "Creamy Mushroom Risotto",
         "short_description": "Creamy Arborio rice cooked with flavorful mushrooms and parmesan cheese.",
-        "preparing_time": "50 minutes",
+        "preparing_time": 50,
         "ingredients": [
             "550 g chicken",
             "120 ml soy sauce",
             "200 g basil leaf",
             "400 g mushroom"
           ],
-        "calories": "380 calories"
+        "calories": 380
 
     },
     {
@@ -69,14 +69,14 @@
         "resipe_id": "5",
         "resipe_name": "Honey Garlic Glazed Salmon",
         "short_description": "Tender salmon fillets glazed with a sweet and savory honey garlic sauce.",
-        "preparing_time": "30 minutes",
+        "preparing_time": 30,
         "ingredients": [
             "550 g chicken",
             "120 ml soy sauce",
             "200 g basil leaf",
             "400 g mushroom"
           ],
-        "calories": "320 calories"
+        "calories": 320
 
     },
     {
@@ -85,14 +85,14 @@
         "resipe_id": "6",
         "resipe_name": "Mango Avocado Salad",
         "short_description": "Refreshing salad featuring ripe mangoes, creamy avocado, and tangy lime dressing.",
-        "preparing_time": "15 minutes",
+        "preparing_time": 15,
         "ingredients": [
             "550 g chicken",
             "120 ml soy sauce",
             "200 g basil leaf",
             "400 g mushroom"
           ],
-        "calories": "180 calories"
+        "calories": 180
 
     }
   ]
