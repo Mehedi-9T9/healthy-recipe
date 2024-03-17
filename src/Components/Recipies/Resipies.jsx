@@ -3,6 +3,10 @@ import { useState } from "react";
 import Recipe from "./Resipe/Recipe";
 import Cart from "./Cart/Cart";
 
+import { ToastContainer, toast } from 'react-toastify';
+
+  import 'react-toastify/dist/ReactToastify.css';
+
 const Recipies = () => {
     const [recipes,setRecipes]=useState([]);
     useEffect(()=>{
@@ -10,6 +14,53 @@ const Recipies = () => {
         .then(res => res.json())
         .then(data => setRecipes(data))
     },[])
+
+const toastHandler=()=>{
+    toast("Sorry You can't Select multiple Item !")
+}
+
+const [selects,setSelects]=useState([])
+    const wantToCookHandler =(recipe,id)=>{
+
+        if(selects.length >0){
+            for (let i = 0; i < selects.length; i++) {
+            if (selects[i].resipe_id !== id) {
+                console.log('same to');
+                const newSelecte = [...selects,recipe]
+                setSelects(newSelecte)
+
+
+            }else{
+               toastHandler()
+            }
+        }
+
+
+        }
+        else{
+            const newSelecte = [...selects,recipe]
+            // console.log('same to ');
+            setSelects(newSelecte)
+        }
+
+
+
+
+
+
+
+  }
+//   console.log(selects);
+const [current,setCurrent]=useState([])
+
+const preparingBtnHandler =(id)=>{
+    const precing = selects.filter(select => select.resipe_id !== id)
+    setSelects(precing)
+
+    const currentItem =selects.find(select => select.resipe_id ==id)
+    const newCurrent =[...current,currentItem]
+    setCurrent(newCurrent)
+}
     return (
         <div className="container mx-auto mt-[50px] md:mt-[100px]">
             <div className="text-center ">
@@ -19,14 +70,15 @@ const Recipies = () => {
             <div className="flex md:mt-12 flex-col-reverse md:flex-row gap-5">
                 <div className="md:w-[60%] md:grid grid-cols-2 gap-6">
                      {
-                         recipes.map((recipe,idx) =><Recipe key={idx} recipe={recipe}></Recipe>)
+                         recipes.map((recipe,idx) =><Recipe key={idx} recipe={recipe} wantToCookHandler={wantToCookHandler}></Recipe>)
                     }
                 </div>
 
                 <div className="md:w-[40%] border-2 rounded-2xl">
-                    <Cart></Cart>
+                    <Cart selects={selects} preparingBtnHandler={preparingBtnHandler} current={current}></Cart>
                 </div>
             </div>
+            <ToastContainer />
 
         </div>
      );

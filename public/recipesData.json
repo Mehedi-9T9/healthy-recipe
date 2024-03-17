@@ -2,7 +2,7 @@
     {
 
         "resipe_img": "https://i.ibb.co/BLQShmc/5cdba92e95d1813e3a14122be673189a.jpg",
-        "resipe_id": "R001",
+        "resipe_id": "1",
         "resipe_name": "Classic Spaghetti Bolognese",
         "short_description": "Traditional Italian pasta dish with rich tomato sauce and ground beef.",
         "preparing_time": "45 minutes",
@@ -18,7 +18,7 @@
     {
 
         "resipe_img": "https://i.ibb.co/LJ8VTp9/Crepes-7.jpg",
-        "resipe_id": "R002",
+        "resipe_id": "2",
         "resipe_name": "Grilled Lemon Herb Chicken",
         "short_description": "Juicy grilled chicken marinated in a zesty blend of lemon and herbs.",
         "preparing_time": "35 minutes",
@@ -34,7 +34,7 @@
     {
 
         "resipe_img": "https://i.ibb.co/rwPyn4S/easy-dinner-recipes-65145d8b2b5ee.jpg",
-        "resipe_id": "R003",
+        "resipe_id": "3",
         "resipe_name": "Vegetable Stir-Fry",
         "short_description": "A colorful medley of fresh vegetables stir-fried to perfection.",
         "preparing_time": "25 minutes",
@@ -50,7 +50,7 @@
     {
 
         "resipe_img": "https://i.ibb.co/S0jTnbN/Millionaire-Spaghetti-019-34e9c04b1ae8405088f53450a048e413.jpg",
-        "resipe_id": "R004",
+        "resipe_id": "4",
         "resipe_name": "Creamy Mushroom Risotto",
         "short_description": "Creamy Arborio rice cooked with flavorful mushrooms and parmesan cheese.",
         "preparing_time": "50 minutes",
@@ -66,7 +66,7 @@
     {
 
         "resipe_img": "https://i.ibb.co/47M4rWs/Prawn-harissa-spaghetti-b3b0fdd.jpg",
-        "resipe_id": "R005",
+        "resipe_id": "5",
         "resipe_name": "Honey Garlic Glazed Salmon",
         "short_description": "Tender salmon fillets glazed with a sweet and savory honey garlic sauce.",
         "preparing_time": "30 minutes",
@@ -82,7 +82,7 @@
     {
 
         "resipe_img": "https://i.ibb.co/GMT5RSJ/Rectangle-20170-1.png",
-        "resipe_id": "R006",
+        "resipe_id": "6",
         "resipe_name": "Mango Avocado Salad",
         "short_description": "Refreshing salad featuring ripe mangoes, creamy avocado, and tangy lime dressing.",
         "preparing_time": "15 minutes",

@@ -2,8 +2,8 @@ import { useState } from "react";
 import { IoMdTime} from "react-icons/io";
 import { FaFire } from "react-icons/fa";
 
-const Recipe = ({recipe}) => {
-  const {resipe_img,resipe_name,short_description, ingredients,preparing_time,calories}=recipe
+const Recipe = ({recipe,wantToCookHandler}) => {
+  const {resipe_img,resipe_name,short_description, ingredients,preparing_time,calories,resipe_id}=recipe
   // const [value,setValue] =useState([])
   // setValue(ingredients)
   // console.log(value);
@@ -33,7 +33,7 @@ return (
 
 
                   <div className="card-actions mt-6">
-                  <button className="btn bg-green-500 text-black text-lg font-semibold rounded-3xl">Want To Cook</button>
+                  <button onClick={()=>wantToCookHandler(recipe,resipe_id)} className="btn bg-green-500 text-black text-lg font-semibold rounded-3xl">Want To Cook</button>
                   </div>
             </div>
       </div>

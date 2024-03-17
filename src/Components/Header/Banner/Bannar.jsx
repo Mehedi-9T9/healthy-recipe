@@ -1,8 +1,8 @@
 const Bannar = () => {
     return (
         <div className="container mx-auto  ">
-            <div className="hero md:h-[600px] rounded-2xl" style={{backgroundImage: 'url(https://daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.jpg)'}}>
-            <div className="hero-overlay bg-opacity-60 rounded-2xl"></div>
+            <div className="hero md:h-[600px] rounded-2xl" style={{backgroundImage: 'url(Bannar.png)'}}>
+
             <div className="hero-content text-center text-neutral-content ">
                 <div className="md:w-[800px]">
                     <h1 className="mb-5 text-3xl md:text-5xl font-bold">Discover an exceptional cooking class tailored for you!</h1>
