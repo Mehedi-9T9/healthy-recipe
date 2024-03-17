@@ -23,7 +23,6 @@ const [selects,setSelects]=useState([])
         if(selects.length >0){
             for (let i = 0; i < selects.length; i++) {
             if (selects[i].resipe_id !== id) {
-                console.log('same to');
                 const newSelecte = [...selects,recipe]
                 setSelects(newSelecte)
 
